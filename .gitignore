@@ -1,5 +1,9 @@
 *.class
-
+.metadata
+.metadata/.plugins
+.metadata/.lock
+.metadata/.log
+.gitingnore
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
