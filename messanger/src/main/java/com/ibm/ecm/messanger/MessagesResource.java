@@ -18,14 +18,14 @@ public class MessagesResource {
 	MessageService messageService = new MessageService();
 	
 	@GET
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_XML)
 	public List<Message> getMessages(){
 		return messageService.getAllMessages();
 	}
 	
 	@GET
 	@Path ("/{messageId}")
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.APPLICATION_XML)
 	public Message getMessage(@PathParam("messageId") long id) {
 		
 		return messageService.getMessage(id);
